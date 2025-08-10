@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tata Motors Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header with logo and vertical nav -->
+  <header>
+    <div class="logo">TATA MOTORS</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <!-- Hero section with video -->
+  <section class="hero" id="home">
+    <video autoplay muted loop class="hero-video">
+      <source src="tata-showcase.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Drive New Forever</h1>
+      <p class="tagline">Explore Tata's latest innovations in mobility</p>
+      <button id="exploreBtn">Explore Cars</button>
+    </div>
+  </section>
+
+  <!-- Cars Gallery -->
+  <section class="car-gallery" id="cars">
+    <div class="car-card">
+      <img src="nexon.jpg" alt="Tata Nexon" />
+      <h2>Nexon</h2>
+      <p>Price: ₹15.50 Lakh | Top Speed: 175 km/h</p>
+    </div>
+    <div class="car-card">
+      <img src="harrier.jpg" alt="Tata Harrier" />
+      <h2>Harrier</h2>
+      <p>Price: ₹17.47 Lakh | Top Speed: 195 km/h</p>
+    </div>
+    <div class="car-card">
+      <img src="safari.jpg" alt="Tata Safari" />
+      <h2>Safari</h2>
+      <p>Price: ₹24.55 Lakh | Top Speed: 245 km/h</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Tata Motors Clone by Aditya</p>
+  </footer>
+
+
+<div class="chatbot-container">
+  <div class="chatbot-toggle" id="chatbotToggle">💬</div>
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">Tata Assistant 🤖</div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="bot-message">Hi! How can I assist you today?</div>
+    </div>
+    <input type="text" id="chatbotInput" placeholder="Type your question..." />
+  </div>
+</div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
